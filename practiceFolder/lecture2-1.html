@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2주차 월요일 수업</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <style>
+    .hi2-div{
+      border: 5px solid red;
+      padding: 20px;
+      font-size: 30px;
+      margin-left: 10px;
+    }
+
+    .hi3-div{
+      border: 5px dotted green;
+      font-size: 40px;
+      margin: 10px;
+      padding: 10px;
+      background-color: blueviolet;
+      opacity: 0.5;
+      color: black;
+      /* display: hidden; */
+    }
+
+    .hi4-div{
+      display: flex;
+      width: 50%;
+      height: 100px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      font-size: 30px;
+      font-weight: 600;
+      color:yellowgreen ;
+      margin: 10px;
+      padding: 10px;
+      border: 5px dashed yellowgreen;
+      background-color: black;
+      
+    }
+
+    .hide{
+      display: none;
+    }
+
+    .header{
+      background-color: black;
+      color: yellow;
+      position: fixed;
+      top:0
+    }
+  </style>
+
+</head>
+<body>
+  <div>실습!</div>
+  <div>
+    안뇽1
+  </div>
+  <div class="hi2-div">안뇽2</div>
+  <div class="hi3-div">안뇽3</div>
+  <div class="hi4-div" onclick="alert('클릭됨'); $(this).addClass('hide')">안뇽4</div>
+  <div class="header"> 헤더 입니다만?</div>
+  <table > 
+    <caption >우도입도 총괄요금표</caption>
+    <colgroup>
+        <col style="background-color:darkseagreen;">
+    </colgroup>
+    <thead>
+        <tr>
+            <th rowspan="2">구분</th>
+            <th colspan="3" style="background-color:wheat;">우도입도 총괄요금표</th>
+            <!-- <th></th> -->
+            <!-- <th></th> -->
+        </tr>
+        <tr>
+            <!-- <th></th> -->
+            <th>선박요금</th>
+            <th>도립공원입장료</th>
+            <th>터미널이용료</th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <td colspan="4" style="background-color: white;">*이륜차(오토바이,자전거) 및 화물차량은 별도 문의</td>
+            <!-- <td></td> -->
+            <!-- <td></td> -->
+            <!-- <td></td> -->
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr>
+            <th>성인</th>
+            <td>2,000원</td>
+            <td>1,000원</td>
+            <td>500원</td>
+        </tr>
+        <tr>
+            <th>중학생이상</th>
+            <td>2,000원</td>
+            <td>800원</td>
+            <td>300원</td>
+        </tr>
+        <tr>
+            <th>초등학생</th>
+            <td>700원</td>
+            <td>500원</td>
+            <td>300원</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>

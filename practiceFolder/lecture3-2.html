@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .div_blue{
+      background-color: aqua;
+    }
+  </style>
+</head>
+<body>
+  <div id="div1">
+    처음 시작~~
+  </div>
+  <div class="div2">
+    와!
+  </div>
+
+  <script>
+    let divchange =document.getElementById('div1');
+    // divchange.textContent ='new div';
+
+    // divchange.addEventListener('click', function(){
+    //   alert('change');
+    // })
+    divchange.appendChild("<ul><li>1</li></ul>")
+
+    let divchange2 =document.getElementsByClassName('div2');
+    // alert(divchange2.length);
+    divchange2[0].textContent ='new div2';
+
+    divchange2[0].setAttribute("class", "div_blue")
+  </script>
+</body>
+</html>
