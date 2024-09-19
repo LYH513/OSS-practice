@@ -52,14 +52,14 @@
           <td >Thornton</td>
           <td>@fat</td>
         </tr>
-        <tr onmouseover="highlightText(this)" onmouseout="removeHighLight(this)" >
+        <tr onmouseover="highlightText(this)" onmouseout="removeHighLight(this)">
           <th scope="row">3</th>
           <td colspan="2">Larry the Bird</td>
           <td>@twitter</td>
         </tr>
         <tr onmouseover="highlightText(this)" onmouseout="removeHighLight(this)">
           <th scope="row">4</th>
-          <td colspan="2">Larry the Bird</td>
+          <td id="test" colspan="2">Larry the Bird</td>
           <td>@twitter</td>
         </tr>
       </tbody>
@@ -84,6 +84,10 @@
       </div>
     </div>
 
+    <button class="btn btn-warning" id="btn1" onclick="clickbtn()">확인</button>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
     <script>
       function highlightText(row) {
         console.log(row); // 이벤트가 발생한 tr 요소 자체
@@ -91,6 +95,11 @@
       }
       function removeHighLight(row){
         row.classList.remove('table-active');
+      }
+
+      function clickbtn(){
+        // id="test"를 가진 td의 텍스트를 가져옴
+        alert( $("#test").text());
       }
     </script>
 
