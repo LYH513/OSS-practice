@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .responsive{
+      background-color: aqua;
+    }
+    .nonresponsive{
+      background-color: blueviolet;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .responsive {
+        background-color: red;
+        font-size: 40px;
+      }
+    }
+    @media only screen and (max-width: 400px) {
+      .responsive {
+        background-color: blue;
+        font-size: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="responsive">반응형임ㅋ</div>
+  <div class="nonresponsive">반응형이 아님</div>
+  
+</body>
+</html>
