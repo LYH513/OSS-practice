@@ -24,11 +24,23 @@
         font-size: 60px;
       }
     }
+
+    .img-responsive{
+      width: 200px;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .img-responsive {
+        width: 50px;
+      }
+    }
+
   </style>
 </head>
 <body>
   <div class="responsive">반응형임ㅋ</div>
   <div class="nonresponsive">반응형이 아님</div>
   
+  <img src="./pokemon.gif" class="img-responsive"></img>
 </body>
 </html>
